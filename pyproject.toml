@@ -1,0 +1,18 @@
+[project]
+name = "mcp-server-ledger"
+version = "0.1.0"
+description = "A Model Context Protocol server providing tools to execute Ledger, a powerful command-line accounting system, commands."
+readme = "README.md"
+authors = [{name = "Minhyeok Lee", email = "minhyeok.lee95@gmail.com"}]
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.1.8",
+    "mcp>=1.4.1",
+]
+license = "MIT"
+keywords = ["mcp", "ledger"]
+
+[dependency-groups]
+dev = [
+    "mcp[cli]>=1.4.1",
+]
