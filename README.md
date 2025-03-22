@@ -1,5 +1,7 @@
 # mcp-server-ledger: A Ledger CLI MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@minhyeoky/mcp-ledger)](https://smithery.ai/server/@minhyeoky/mcp-ledger)
+
 ## Overview
 
 A Model Context Protocol server for interacting with [Ledger CLI](https://www.ledger-cli.org/), a powerful, double-entry accounting system accessible from the command line. This server allows Large Language Models to query and analyze your financial data through the Ledger CLI tool.
@@ -142,5 +144,3 @@ This server runs Ledger CLI commands on your financial data. While it includes b
 ## License
 
 This MCP server is licensed under the MIT License. Feel free to use, modify, and distribute it according to the license terms.
-
-Would you like me to add or modify any specific sections of this README?
