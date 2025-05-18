@@ -64,6 +64,34 @@ The server provides the following tools that map to Ledger CLI commands:
 
 ## Installation
 
+### Using Docker (recommended)
+
+You can also use the Docker image from the minhyeoky/mcp-ledger repository:
+
+```bash
+docker pull minhyeoky/mcp-ledger
+```
+
+Add this to your `claude_desktop_config.json`:
+
+```json
+"mcp-ledger": {
+  "command": "docker",
+  "args": [
+    "run",
+    "-v",
+    "/path/to/your/ledger/file.ledger:/main.ledger",
+    "-e",
+    "LEDGER_FILE=/main.ledger",
+    "-i",
+    "--rm",
+    "minhyeoky/mcp-ledger"
+  ]
+}
+```
+
+Replace `/path/to/your/ledger/file.ledger` with the actual path to your ledger file.
+
 ### Installing via Smithery
 
 To install Ledger CLI MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@minhyeoky/mcp-ledger):
@@ -72,14 +100,13 @@ To install Ledger CLI MCP Server for Claude Desktop automatically via [Smithery]
 npx -y @smithery/cli install @minhyeoky/mcp-ledger --client claude
 ```
 
-### Using uv (recommended)
+### Using uv
 
 The easiest way to install and run this server is with [uv](https://docs.astral.sh/uv/):
 
 ```bash
 uv sync
 ```
-
 ## Configuration
 
 The server requires a path to your Ledger file. This can be provided through:
