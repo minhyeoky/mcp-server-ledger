@@ -64,6 +64,14 @@ The server provides the following tools that map to Ledger CLI commands:
 
 ## Installation
 
+### Installing via Smithery
+
+To install Ledger CLI MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@minhyeoky/mcp-ledger):
+
+```bash
+npx -y @smithery/cli install @minhyeoky/mcp-ledger --client claude
+```
+
 ### Using uv (recommended)
 
 The easiest way to install and run this server is with [uv](https://docs.astral.sh/uv/):
