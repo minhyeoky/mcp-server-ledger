@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/minhyeoky-mcp-server-ledger-badge.png)](https://mseep.ai/app/minhyeoky-mcp-server-ledger)
+
 # mcp-server-ledger: A Ledger CLI MCP Server
 
 [![smithery badge](https://smithery.ai/badge/@minhyeoky/mcp-ledger)](https://smithery.ai/server/@minhyeoky/mcp-ledger)
