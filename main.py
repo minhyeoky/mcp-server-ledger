@@ -21,7 +21,7 @@ class LedgerBalance(BaseModel):
         None, description="Start date for transactions (YYYY/MM/DD)"
     )
     end_date: Optional[str] = Field(
-        None, description="End date for transactions (YYYY/MM/DD)"
+        None, description="End date (exclusive) for transactions (YYYY/MM/DD)"
     )
     depth: Optional[int] = Field(None, description="Limit account depth displayed")
     monthly: bool = Field(False, description="Group by month")
@@ -40,7 +40,7 @@ class LedgerRegister(BaseModel):
         None, description="Start date for transactions (YYYY/MM/DD)"
     )
     end_date: Optional[str] = Field(
-        None, description="End date for transactions (YYYY/MM/DD)"
+        None, description="End date (exclusive) for transactions (YYYY/MM/DD)"
     )
     monthly: bool = Field(False, description="Group by month")
     weekly: bool = Field(False, description="Group by week")
@@ -77,7 +77,7 @@ class LedgerPrint(BaseModel):
         None, description="Start date for transactions (YYYY/MM/DD)"
     )
     end_date: Optional[str] = Field(
-        None, description="End date for transactions (YYYY/MM/DD)"
+        None, description="End date (exclusive) for transactions (YYYY/MM/DD)"
     )
 
 
@@ -91,7 +91,7 @@ class LedgerBudget(BaseModel):
         None, description="Start date for transactions (YYYY/MM/DD)"
     )
     end_date: Optional[str] = Field(
-        None, description="End date for transactions (YYYY/MM/DD)"
+        None, description="End date (exclusive) for transactions (YYYY/MM/DD)"
     )
     monthly: bool = Field(False, description="Group by month")
     weekly: bool = Field(False, description="Group by week")
