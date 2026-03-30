@@ -10,6 +10,10 @@ A Model Context Protocol server for interacting with [Ledger CLI](https://www.le
 
 This MCP server exposes Ledger CLI's functionality through a standardized interface, making it easy for AI assistants to help you with financial reporting, budget analysis, and accounting tasks.
 
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/minhyeoky-mcp-server-ledger).
+
 ## Features
 
 The server provides the following tools that map to Ledger CLI commands:
